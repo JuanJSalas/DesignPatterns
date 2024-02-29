@@ -10,8 +10,8 @@ namespace DesignPatterns
     {
         public MallardDuck() 
         {
-            quackBehavior = new Quack();
             flyBehavior = new FlyWithWings();
+            quackBehavior = new Quack();            
         }
 
         public override void Display()

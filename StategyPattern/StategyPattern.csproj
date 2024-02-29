@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A93B71DC-9C86-4D27-8083-5BCA8AC68AF3}</ProjectGuid>
+    <ProjectGuid>{CF108C79-CF00-496B-AEF6-3F7CF7E20438}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DesignPatterns</RootNamespace>
-    <AssemblyName>DesignPatterns</AssemblyName>
+    <RootNamespace>StategyPattern</RootNamespace>
+    <AssemblyName>StategyPattern</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,20 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Duck.cs" />
-    <Compile Include="DuckCallDevice.cs" />
-    <Compile Include="FlyNoWay.cs" />
-    <Compile Include="FlyRocketPowered.cs" />
-    <Compile Include="FlyWithWings.cs" />
-    <Compile Include="IFlyBehavior.cs" />
-    <Compile Include="IQuackBehavior.cs" />
-    <Compile Include="MallardDuck.cs" />
-    <Compile Include="ModelDuck.cs" />
-    <Compile Include="MuteQuack.cs" />
+    <Compile Include="Axe.cs" />
+    <Compile Include="BowAndArrow.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="IWeapon.cs" />
+    <Compile Include="King.cs" />
+    <Compile Include="Knife.cs" />
+    <Compile Include="Knight.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quack.cs" />
-    <Compile Include="Squeak.cs" />
+    <Compile Include="Queen.cs" />
+    <Compile Include="Sword.cs" />
+    <Compile Include="Troll.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

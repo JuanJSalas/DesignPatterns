@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{A93B71DC-9C86-4D27-8083-5BCA8AC68AF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StategyPattern", "StategyPattern\StategyPattern.csproj", "{CF108C79-CF00-496B-AEF6-3F7CF7E20438}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A93B71DC-9C86-4D27-8083-5BCA8AC68AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A93B71DC-9C86-4D27-8083-5BCA8AC68AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A93B71DC-9C86-4D27-8083-5BCA8AC68AF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF108C79-CF00-496B-AEF6-3F7CF7E20438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF108C79-CF00-496B-AEF6-3F7CF7E20438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF108C79-CF00-496B-AEF6-3F7CF7E20438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF108C79-CF00-496B-AEF6-3F7CF7E20438}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

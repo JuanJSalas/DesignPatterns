@@ -13,6 +13,14 @@ namespace DesignPatterns
             Duck duck = new MallardDuck();
             duck.PerformQuack();
             duck.PerformFly();
+
+            Duck model = new ModelDuck();
+            model.PerformFly();
+            model.SetFlyBehavior(new FlyRocketPowered());
+            model.PerformFly();
+            model.PerformQuack();
+            model.SetQuackBehavior(new DuckCallDevice());
+            model.PerformQuack();
         }
     }
 }

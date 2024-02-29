@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns
 {
@@ -11,18 +7,31 @@ namespace DesignPatterns
         protected IFlyBehavior flyBehavior;
         protected IQuackBehavior quackBehavior;
 
+        public void PerformFly()
+        {
+            flyBehavior.Fly();
+        }
+
+        public void SetFlyBehavior(IFlyBehavior fb)
+        {
+            flyBehavior = fb;
+        }
+
         public void PerformQuack() 
         {
             quackBehavior.Quack();
         }
-        public void PerformFly() 
+
+        public void SetQuackBehavior(IQuackBehavior qb)
         {
-            flyBehavior.Fly();
+            quackBehavior = qb;
         }
+        
         public void Swim() 
         {
             Console.WriteLine("All ducks float, even decoys!");
         }
+
         public virtual void Display() { }
     }
 }
