@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns
 {
-    internal class Program
+    internal class FlyNoWay : IFlyBehavior
     {
-        static void Main(string[] args)
+        public void Fly()
         {
-            Duck duck = new MallardDuck();
-            duck.PerformQuack();
-            duck.PerformFly();
+            Console.WriteLine("I can't fly.");
         }
     }
 }

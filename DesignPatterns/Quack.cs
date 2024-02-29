@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns
 {
-    internal class Program
+    internal class Quack : IQuackBehavior
     {
-        static void Main(string[] args)
+        void IQuackBehavior.Quack()
         {
-            Duck duck = new MallardDuck();
-            duck.PerformQuack();
-            duck.PerformFly();
+            Console.WriteLine("I'm quaking.");
         }
     }
 }
