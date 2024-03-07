@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OvserverPattern.CurrentConditionsDisplay" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAAAAAAAAAAAAAAQAAAAAAAAAAAAQAAAAABAA=</HashCode>
+      <FileName>CurrentConditionsDisplay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OvserverPattern.ForecastDisplay" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAAAAAAAQAAAAAAQAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>ForecastDisplay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OvserverPattern.HeatIndexDisplay" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgIAAAAAEAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HeatIndexDisplay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OvserverPattern.StatisticsDisplay" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAIAAAAAAIgAAAAQCAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StatisticsDisplay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ObserverPattern.Program">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObserverPattern.WeatherData" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAggAAAAgAQAABAAABAAAAAAAAIAAAAAQAAAQgBAA=</HashCode>
+      <FileName>WeatherData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.137" />
+  </Class>
+  <Interface Name="ObserverPattern.IDisplayElement">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDisplayElement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ObserverPattern.IObserver">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ObserverPattern.ISubject">
+    <Position X="5.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ISubject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
