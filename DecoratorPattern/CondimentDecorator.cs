@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DecoratorPattern
+﻿namespace DecoratorPattern
 {
     public abstract class CondimentDecorator : Beverage
     {
         public Beverage _beverage;
 
-        public abstract string GetDescription();
+        //public abstract string GetDescription();
+
+        //public Size GetSize()
+        //{
+        //    return _beverage._size;
+        //}
+
     }
 }
