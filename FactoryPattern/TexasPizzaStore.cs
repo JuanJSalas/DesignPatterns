@@ -1,8 +1,8 @@
 ﻿namespace FactoryPattern
 {
-    public class SimpleFactoryPizza
+    internal class TexasPizzaStore : PizzaStore
     {
-        public Pizza CreatePizza(string type)
+        protected override Pizza CreatePizza(string type)
         {
             Pizza pizza = null;
 

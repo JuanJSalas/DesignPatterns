@@ -1,19 +1,12 @@
 ﻿namespace FactoryPattern
 {
-    public class PizzaStore
+    public abstract class PizzaStore
     {
-        SimpleFactoryPizza factory;
-
-        public PizzaStore(SimpleFactoryPizza factoryPizza)
+        public Pizza OrderPizza(string type)
         {
-            factory = factoryPizza;
-        }
+            Pizza pizza;
 
-        public IPizza OrderPizza(string type)
-        {
-            IPizza pizza;
-
-            pizza = factory.CreatePizza(type);
+            pizza = CreatePizza(type);
 
             pizza.Prepare();
             pizza.Bake();
@@ -22,5 +15,7 @@
 
             return pizza;
         }
+
+        protected abstract Pizza CreatePizza(string type);
     }
 }
