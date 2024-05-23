@@ -5,15 +5,28 @@
         protected override Pizza CreatePizza(string type)
         {
             Pizza pizza = null;
+            IPizzaIngredientFactory ingredientFactory = new ChicagoPizzaIngredientFactory();
 
             if (type == "cheese")
-                pizza = new ChicagoStyleCheesePizza();
+            {
+                pizza = new CheesePizza(ingredientFactory);
+                pizza.Name = "Chicago Style Cheese Pizza";
+            }
             else if (type == "pepperoni")
-                pizza = new ChicagoStylePepperoniPizza();
+            {
+                pizza = new PepperoniPizza(ingredientFactory);
+                pizza.Name = "Chicago Style Pepperoni Pizza";
+            }
             else if (type == "clam")
-                pizza = new ChicagoStyleClamPizza();
+            {
+                pizza = new ClamPizza(ingredientFactory);
+                pizza.Name = "Chicago Style Clam Pizza";
+            }
             else if (type == "veggie")
-                pizza = new ChicagoStyleVeggiePizza();
+            {
+                pizza = new VeggiePizza(ingredientFactory);
+                pizza.Name = "Chicago Style Veggie Pizza";
+            }
 
             return pizza;
         }

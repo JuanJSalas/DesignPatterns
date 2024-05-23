@@ -5,20 +5,15 @@ namespace FactoryPattern
 {
     public abstract class Pizza
     {
-        protected string _name;
-        protected string _dough;
-        protected string _sauce;
-        protected List<string> _toppings = new List<string>();
+        public string Name { get; set; }
+        protected IDough _dough;
+        protected ISauce _sauce;
+        IVeggies[] _veggies;
+        protected ICheese _cheese;
+        protected IPepperoni _pepperoni;
+        protected IClams _clams;
 
-
-        public virtual void Prepare() 
-        {
-            Console.WriteLine($"Preparing {_name}");
-            Console.WriteLine("Tossing dough...");
-            Console.WriteLine("Adding sauce...");
-            Console.WriteLine("Adding toppings:");
-            foreach( string p in _toppings ) Console.WriteLine($"   {p}");
-        }
+        public virtual void Prepare() { }
 
         public virtual void Bake()
         {
@@ -33,11 +28,6 @@ namespace FactoryPattern
         public virtual void Box()
         {
             Console.WriteLine("Place pizza in official PizzaStore box");
-        }
-
-        public string GetName()
-        {
-            return _name;
         }
     }
 }

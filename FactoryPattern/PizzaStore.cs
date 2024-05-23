@@ -16,6 +16,7 @@
             return pizza;
         }
 
+        // This is the Factory Method
         protected abstract Pizza CreatePizza(string type);
     }
 }
